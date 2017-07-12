@@ -5,8 +5,6 @@ import { HttpModule } from '@angular/http';
 // electron
 import { NgxElectronModule } from './ngx-electron/ngx-electron.module';
 // app
-import { AppRoutingModule } from './app-routing.module';
-import { WelcomeModule } from './welcome/welcome.module';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -17,9 +15,7 @@ import { AppComponent } from './app.component';
         BrowserModule,
         FormsModule,
         HttpModule,
-        AppRoutingModule,
-        NgxElectronModule,
-        WelcomeModule,
+        NgxElectronModule
     ],
     providers: [],
     bootstrap: [AppComponent]
